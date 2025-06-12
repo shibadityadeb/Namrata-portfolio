@@ -159,3 +159,25 @@ footer {
     padding: 20px;
   }
 }
+
+.logo-badge {
+  width: 80px;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(203, 160, 245, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.logo-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
